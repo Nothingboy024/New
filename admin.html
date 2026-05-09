@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginBox" class="container">
+  <h2>Admin Login</h2>
+  <input type="password" id="adminPass" placeholder="Password">
+  <button onclick="checkPassword()">Login</button>
+</div>
+
+<div id="adminPanel" style="display:none;">
+  <header>Admin Panel</header>
+  <div class="container">
+    <input id="anime" placeholder="Anime Name">
+    <input id="poster" placeholder="Poster Image URL">
+    <input id="episode" placeholder="Episode Number">
+    <input id="link480" placeholder="480p Link">
+    <input id="link720" placeholder="720p Link">
+    <input id="link1080" placeholder="1080p Link">
+    <button onclick="addEpisode()">Add Episode</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
